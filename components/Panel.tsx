@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
-import { supabase } from '@/lib/supabase';
-import { downloadCSV, normalize, parseCSV } from '@/lib/utils';
-import * as XLSX from 'xlsx';
+import { supabase } from '../lib/supabase';
+import { downloadCSV, normalize, parseCSV } from '../lib/utils';
 
 type SessionUser = { email: string; rol: string } | null;
 
